@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamaFilm.Views.MenuView"
+             Title="Master">
+
+    <StackLayout>
+        <Grid BackgroundColor="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Grid.Column="0" Source="XamaFilm.png"/>
+            <Label Grid.Row="1" Grid.Column="0"  Text="XamaFilm" HorizontalTextAlignment="Center" FontSize="Large"/>
+
+        </Grid>
+
+        <Grid BackgroundColor="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Row="0" Grid.Column="0" Source="movie_menu.png"/>
+            <Label Grid.Row="0" Grid.Column="1"  Text="MOVIES" FontSize="Medium"/>
+
+            <Image Grid.Row="1" Grid.Column="0" Source="serie_menu.png"/>
+            <Label Grid.Row="1" Grid.Column="1"  Text="SERIES" FontSize="Medium"/>
+
+            <Image Grid.Row="2" Grid.Column="0" Source="watchlist_menu.png"/>
+            <Label Grid.Row="2" Grid.Column="1"  Text="WATCHLIST" FontSize="Medium"/>
+
+            <Image Grid.Row="3" Grid.Column="0" Source="favorites_menu.png"/>
+            <Label Grid.Row="3" Grid.Column="1"  Text="FAVORITES" FontSize="Medium"/>
+
+            <Image Grid.Row="4" Grid.Column="0" Source="settings_menu.png"/>
+            <Label Grid.Row="4" Grid.Column="1"  Text="SETTINGS" FontSize="Medium"/>
+
+            <Image Grid.Row="5" Grid.Column="0" Source="logout_menu.png"/>
+            <Label Grid.Row="5" Grid.Column="1"  Text="LOGUOT" FontSize="Medium"/>
+            
+
+        </Grid>
+        
+    </StackLayout>
+    
+  <!--<StackLayout>
+    <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}">
+      <ListView.Header>
+        <Grid BackgroundColor="#03A9F4">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+          </Grid.RowDefinitions>
+          <Label
+              Grid.Column="1"
+              Grid.Row="2"
+              Text="AppName"
+              Style="{DynamicResource SubtitleStyle}"/>
+        </Grid>
+      </ListView.Header>
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand">
+              <Label VerticalOptions="FillAndExpand" 
+                    VerticalTextAlignment="Center" 
+                    Text="{Binding Title}" 
+                    FontSize="24"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>-->
+</ContentPage>

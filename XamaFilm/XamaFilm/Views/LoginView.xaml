@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamaFilm.Views.LoginView">
+    
+    <FlexLayout Direction="Column"
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly">
+
+        <Image Source="XamaFilm.png" />
+        
+        <Label Text="XAMA FILM"
+               FontSize="Large" />
+
+        <Label Text="User Name"/>
+        <Entry Placeholder="Enter user name"/>
+
+        <Label Text="Password"/>
+        <Entry Placeholder="Password" IsPassword="True"/>
+
+        <Button Text="Login" />
+
+        <Label Text="Another Label" />
+    </FlexLayout>
+    
+</ContentPage>

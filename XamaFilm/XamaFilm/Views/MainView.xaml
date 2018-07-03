@@ -4,12 +4,12 @@
              x:Class="XamaFilm.Views.MainView"
              xmlns:pages="clr-namespace:XamaFilm.Views">
   <MasterDetailPage.Master>
-    <pages:MainViewMaster x:Name="MasterPage" />
+    <pages:MenuView x:Name="MasterPage" />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
     <NavigationPage>
       <x:Arguments>
-        <pages:MainViewDetail />
+        <pages:HomeView />
       </x:Arguments>
     </NavigationPage>
   </MasterDetailPage.Detail>
