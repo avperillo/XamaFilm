@@ -1,4 +1,5 @@
 using System;
+using XamaFilm.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace XamaFilm
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new MainView();
 		}
 
 		protected override void OnStart ()
