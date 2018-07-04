@@ -12,7 +12,7 @@ namespace XamaFilm
 		{
 			InitializeComponent();
 
-			MainPage = new SettingsView();
+			MainPage = new AcknowledgmentView();
 		}
 
 		protected override void OnStart ()

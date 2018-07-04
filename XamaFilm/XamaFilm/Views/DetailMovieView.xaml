@@ -1,32 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamaFilm.Views.DetailMovieView"
-             BindingContext="{Binding Instance}">
+             xmlns:viewModel="clr-namespace:XamaFilm.ViewModels"
+             x:Class="XamaFilm.Views.DetailMovieView">
 
+    <ContentPage.BindingContext>
+        <viewModel:DetailMovieViewModel />
+    </ContentPage.BindingContext>
+    
     <ScrollView>
         <StackLayout>
 
             <Label x:Name="titleLabel" FontSize="Large"/>
-            <Image x:Name="imageImage"/>
+            <Image x:Name="imageImage" Source="{Binding Movie.Poster}"/>
 
             <Label Text="General" FontSize="Medium"/>
-            <Label x:Name="descriptionLabel"/>
+            <Label x:Name="descriptionLabel" Text="{Binding Movie.Genre}"/>
 
             <Label Text="Actors" FontSize="Medium"/>
-            <Label x:Name="actorsLabel"/>
+            <Label x:Name="actorsLabel" Text="{Binding Movie.Actors}"/>
 
             <Label Text="Autors" FontSize="Medium"/>
-            <Label x:Name="autorsLabel"/>
+            <Label x:Name="autorsLabel" Text="{Binding Movie.Director}"/>
 
             <Label Text="Writers" FontSize="Medium"/>
-            <Label x:Name="wirtersLabel"/>
+            <Label x:Name="wirtersLabel" Text="{Binding Movie.Writer}"/>
 
             <Label Text="Country" FontSize="Medium"/>
-            <Label x:Name="countryLabel"/>
+            <Label x:Name="countryLabel" Text="{Binding Movie.Country}"/>
 
             <Label Text="Rewards" FontSize="Medium"/>
-            <Label x:Name="rewardsLabel"/>
+            <Label x:Name="rewardsLabel" Text="{Binding Movie.Awards}"/>
             
             <Label Text="Rattings" FontSize="Medium"/>
             <ListView x:Name="ratingsList"/>
